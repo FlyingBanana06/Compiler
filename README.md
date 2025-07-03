@@ -1,4 +1,4 @@
-# 📦 Code Runner (C / C++ / Python)
+# 📦 Code Runner for C / C++ / Python
 
 A lightweight command-line tool that compiles and runs **single-source files** in **C**, **C++**, or **Python**. Designed for quick testing and simple workflows, this utility validates input, handles compilation, and executes code with user-friendly prompts and error messages.
 
@@ -8,12 +8,14 @@ A lightweight command-line tool that compiles and runs **single-source files** i
 
 ```
 .
+├── bin/           # Final compiled executable goes here (e.g., compiler)
+├── input/         # Input source files (.c, .cpp, .py)
+├── output/        # Output directory for compiled executables
 ├── src/
 │   ├── main.cpp         # Main logic and user interaction
 │   ├── header.hpp       # Function declarations and macros
 │   └── header.cpp       # Implementation for file checks and validation
-├── bin/                 # Final compiled executable goes here (e.g., compiler)
-└── README.md            # Project documentation (you’re reading it!)
+└── README.md      # Project documentation (you’re reading it!)
 ```
 
 ---
@@ -26,13 +28,13 @@ To compile the runner, use the following command:
 g++ src/main.cpp src/header.cpp -std=c++17 -o bin/compiler
 ```
 
-Make sure the `bin/` directory exists before running the command. If it doesn’t, create it with:
+> ✅ Make sure all the `bin/`,  `input/` and `output/` directories exists before running the command. If it doesn’t, create it with:
 
 ```bash
-mkdir bin
+mkdir bin input output
 ```
 
-After compiling, run the tool with:
+Once compiled and folders are ready, run the tool using:
 
 ```bash
 ./bin/compiler
@@ -51,7 +53,7 @@ After compiling, run the tool with:
 
 ---
 
-## 🧑‍💻 What I Learned (as a CS Student)
+## 🧑‍💻 What I Learned
 
 Through this project, I gained hands-on experience with:
 
